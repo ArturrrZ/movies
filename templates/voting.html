@@ -38,7 +38,7 @@
         })
         .then(response => response.json())
         .then(data => {
-            if (data['is_finished']){window.location.href = "http://www.w3schools.com";}
+            if (data['is_finished']){window.location.href = `/results/${voting_id}`;}
         })
         .catch(error => console.error('Error:', error));
 
