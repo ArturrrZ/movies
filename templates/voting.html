@@ -68,7 +68,7 @@
         }
         console.log("FINISH!!!");
         fetch(`/api/ask_for_end?voting_id=${voting_id}&type=finish`);
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = `/results/${voting_id}`;
     }
  
     $(document).ready(function() {
