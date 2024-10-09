@@ -12,3 +12,5 @@ gunicorn==21.2.0
 psycopg2-binary==2.9.6
 qrcode==7.4.2
 cs50==9.3.4
+
+
