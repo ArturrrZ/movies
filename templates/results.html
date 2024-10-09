@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block title %}Results{% endblock %}
+{% block body %}
+{% for movie in movies[0:1] %}
+<h1 class="results_info">Winner</h1>
+<hr>
+<div class="movie visible" id="place{{movie.place}}">
+    <h3 class="movie-title">{{movie.title}} <span class="release_date">({{movie.release_date}})</span></h3>
+    <p class="movie-genres">Genres: {% for genre in movie.genre_ids %}{{genre}}, {% endfor %}</p>
+    <img class="movie-image" src="https://image.tmdb.org/t/p/original/{{movie.poster_path}}" alt="movie poster" width="300px" height="400px">
+    <p class="movie-overview">{{movie.overview}}</p>
+</div>
+{% endfor %}
+<hr>
+<h2 class="results_info">Other movies:</h2>
+<div class="results_other">
+{% for movie in movies[1:] %}
+<div class="movie visible other" id="place{{movie.place}}">
+    <h3 class="movie-title">{{movie.title}} <span class="release_date">({{movie.release_date}})</span></h3>
+    <p class="movie-genres">Genres: {% for genre in movie.genre_ids %}{{genre}}, {% endfor %}</p>
+    <img class="movie-image" src="https://image.tmdb.org/t/p/original/{{movie.poster_path}}" alt="movie poster" width="300px" height="400px">
+    <p class="movie-overview">{{movie.overview}}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

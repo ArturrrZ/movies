@@ -1,0 +1,114 @@
+body {
+    color: #f0f0f0;
+    background-color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search {
+    margin-top:10%;
+}
+.error {
+    margin-left: 40%;
+    color: red;
+    font-size: 2rem;
+}
+#go_voting {
+    font-size:1.5rem;
+    color:green;
+}
+.error_message {
+    font-size:2rem;
+    color:red;
+}
+.movie {
+    background-color:#141414;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right:30%;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    display: flex;              /* Enable Flexbox */
+    flex-direction: column;     /* Arrange children in a column */
+    align-items: center;        /* Center children horizontally */
+    text-align: center;
+    visibility: hidden;
+}
+.movie-image {
+    margin:10px 0px;
+    width:300px;
+    border-radius:25px;
+}
+.movie-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.release_date {
+    font-size: 8px;
+    font-style:italic;
+    color: #aaaaaa
+}
+.movie-overview {
+    text-align: left;
+    font-weight: 500;
+}
+.movie-genres {
+    font-size: 16px;
+    color: #aaaaaa;
+    text-align: left;
+}
+.movie-buttons {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.movie-buttons > button {width:45%}
+.loading {
+    visibility:hidden;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right:30%;
+    padding: 25px;
+}
+.movie.visible{visibility:visible;}
+.other {
+        width: 400px;
+        margin-left: 3%;
+        margin-right:0%;
+}
+#place1 {
+    color: black;
+    background-color:gold;
+}
+.results_other {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.results_info {
+    margin-left:30%;
+    margin-top: 3%;
+}
+@media (min-width: 481px) and (max-width: 768px) { 
+    .movie {
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+}
+@media (min-width: 420px) and (max-width: 481px) {
+    .movie {
+        margin-top: 15%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+}
+@media (max-width: 420px) {
+    .movie {
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    .movie h3{font-size: 1rem;}
+    .movie img {height: 300px; width:225px}
+    }
+    
+

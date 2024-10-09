@@ -1,0 +1,1 @@
+ select sum(voting_id + id) from votes where voting_id = 5099;
