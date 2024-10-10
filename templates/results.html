@@ -2,7 +2,9 @@
 {% block title %}Results{% endblock %}
 {% block body %}
 {% for movie in movies[0:1] %}
-<h1 class="results_info">Winner</h1>
+<h1 class="results_info">Winner</h1><br/>
+<button class="results_info btn btn-outline-info copy btn-lg my-3">Create another voting</button>
+
 <hr>
 <div class="movie visible" id="place{{movie.place}}">
     <h3 class="movie-title">{{movie.title}} <span class="release_date">({{movie.release_date}})</span></h3>
